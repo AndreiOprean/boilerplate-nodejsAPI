@@ -1,0 +1,20 @@
+{
+  "name": "hapipostgapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc && node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "hapi": "^17.8.5",
+    "pg": "^7.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^11.11.7"
+  }
+}
