@@ -7,5 +7,6 @@ Boilerplate code for a NodeJS API using PostgreSQL, HapiJS and TypeScript
   PGDATABASE="your database name"  
   PGPASSWORD="your password"  
   PGPORT=5432 //default postgres port  
-2.npm install  
-3.npm run dev  
+2.Create a table called "Users" with the fields "Id", "FirstName", "LastName"  
+3.npm install  
+4.npm run dev  
