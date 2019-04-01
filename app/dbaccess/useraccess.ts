@@ -21,5 +21,14 @@ module.exports = class UserRepository {
             console.log("Error init database\n" + e);
         }
     }
+
+    async addUser(user) {
+        console.log("Sending insert user query");
+        try {
+            await db.query("INSERT INTO Users VALUES ($1, $2, $3)", [user.id, user.LastName, user.FirstName]);
+        } catch (e) {
+            return e;
+        }
+    }
 }
 
