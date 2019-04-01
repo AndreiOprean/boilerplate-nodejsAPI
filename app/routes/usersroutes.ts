@@ -8,7 +8,11 @@ module.exports = [
             let userRepo = new UserRepository();
             let res = await userRepo.getAllUsers();
             if (res){
-                return res.rows;
+                if (res.rows.length > 0){
+                    return res.rows;
+                } else {
+                    return "Connection successful, no users currently in the database";
+                }
             } else {
                 return "No Users";
             }

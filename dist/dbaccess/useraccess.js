@@ -33,7 +33,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var db = require('./index.js');
+var db = require('./index');
 module.exports = /** @class */ (function () {
     function UserRepository() {
     }
@@ -54,7 +54,7 @@ module.exports = /** @class */ (function () {
                         return [3 /*break*/, 4];
                     case 3:
                         e_1 = _a.sent();
-                        console.log("Error sending select all query");
+                        console.log("Error sending select all query\n" + e_1);
                         return [3 /*break*/, 4];
                     case 4: return [2 /*return*/, result];
                 }

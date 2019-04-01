@@ -1,0 +1,21 @@
+version: "2"
+services:
+  node-api: 
+    image: node-api
+    ports: 
+      - 8080:8000
+    command: npm run dev
+    depends_on:
+      - db
+    environment: 
+      PGHOST: db
+      PGUSER: postgres
+      PGDATABASE: testdb
+      PGPORT: 5432
+  db:
+    image: postgres
+    ports:
+      - 5431:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: testdb
