@@ -15,5 +15,5 @@ Whithout Docker
 
 With Docker
 
-1.docker build -t node-api .
+1.docker build -t node-api .  
 2.docker-compose up
